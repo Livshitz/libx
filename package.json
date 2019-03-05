@@ -11,8 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "connect-gzip": "^0.1.6",
-    "libx.fuser": "0.0.10",
-    "libx.js": "^0.0.22",
+    "libx.fuser": "0.0.11",
+    "libx.js": "^0.0.23",
     "ng-inline-edit": "^0.7.0"
   },
   "devDependencies": {}
