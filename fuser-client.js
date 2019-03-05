@@ -25,6 +25,11 @@ infra.node = require('libx.js/node');
 			], true);
 			// console.log('res: ', res);
 		},
+		build: async()=> {
+			await infra.gulp.exec([
+				'node ./node_modules/libx.fuser/fuser.js --build --env=prod --secret='+infra.node.args.secret, 
+			], true);
+		},
 		api_deploy: async ()=> {
 			var res = await infra.gulp.exec([
 				'node ./node_modules/libx.fuser/fuser.js --deploy', 
@@ -34,6 +39,8 @@ infra.node = require('libx.js/node');
 
 	if (infra.node.args.apiDeploy) {
 		modes.api_deploy();
+	} else if (infra.node.args.build) {
+		modes.build();
 	} else if (infra.node.args.dev) {
 		modes.devenv();
 	} else {
