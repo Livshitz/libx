@@ -12,7 +12,7 @@
   "dependencies": {
     "buffer": "^5.2.1",
     "connect-gzip": "^0.1.6",
-    "libx.fuser": "0.0.14",
+    "libx.fuser": "0.0.15",
     "libx.js": "^0.0.26",
     "ng-inline-edit": "^0.7.0"
   },
