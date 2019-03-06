@@ -31,7 +31,7 @@ const infra = require('libx.js');
 // ---------------------------------------------
 var secretsFile = '../src/project-secrets.json';
 var secretsKey = (argv.secret || process.env.FUSER_SECRET_KEY || "123").toString();
-infra.log.info('!!! Secret key is: ', secretsKey);
+// infra.log.info('!!! Secret key is: ', secretsKey);
 var projconfig = infra.gulp.readConfig('./build/project.json', secretsKey);
 var projName = projconfig.firebaseProjectName; 
 console.log('projconfig:projName: ', projName);

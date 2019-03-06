@@ -10,4 +10,7 @@
   #  && gulp firebase-deploy-functions
   #command = "gulp build --prod && gulp firebase-deploy-functions"
 
-
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
