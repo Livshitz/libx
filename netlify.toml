@@ -4,9 +4,9 @@
 # “command” is your build command.
 
 [build]
-  # base    = ""
-  # publish = "build"
-  # command = "node fuser-client.js  --build  --env=prod --secret=$secret" # define `secret` env var in netlify console
+  base    = ""
+  publish = "build"
+  command = "node fuser-client.js  --build  --env=prod --secret=$secret" # define `secret` env var in netlify console
   #  && gulp firebase-deploy-functions
   #command = "gulp build --prod && gulp firebase-deploy-functions"
 
