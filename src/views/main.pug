@@ -7,13 +7,15 @@ style.
 		span.icon-inline.icon-embed2 
 		span libx.liv.tools
 	p coming soon ...
-	.md-display-1.fg-blue blue
 	
-	br
-	
-	a(href="/test/") Page II
+	//
+		.md-display-1.fg-blue blue
+		
+		br
+		
+		a(href="/test/") Page II
 
-	.md-display This is test: {{test}}
+		.md-display This is test: {{test}}
 
 script.
 	infra.browser.angular.lazy.controller('inlineController', function ($scope, $rootScope, $controller, $timeout, $interval, $routeParams) {

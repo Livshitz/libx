@@ -12,8 +12,8 @@
   "dependencies": {
     "buffer": "^5.2.1",
     "connect-gzip": "^0.1.6",
-    "libx.fuser": "^0.0.17",
-    "libx.js": "^0.0.27",
+    "libx.fuser": "^0.0.28",
+    "libx.js": "^0.0.43",
     "ng-inline-edit": "^0.7.0"
   },
   "devDependencies": {}

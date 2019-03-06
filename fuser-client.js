@@ -27,7 +27,7 @@ infra.node = require('libx.js/node');
 		},
 		build: async()=> {
 			await infra.gulp.exec([
-				'node ./node_modules/libx.fuser/fuser.js --build --env=prod --secret='+infra.node.args.secret, 
+				'node ./node_modules/libx.fuser/fuser.js --build --env=prod --secret='+(infra.node.args.secret || process.env.FUSER_SECRET_KEY), 
 			], true);
 		},
 		api_deploy: async ()=> {
