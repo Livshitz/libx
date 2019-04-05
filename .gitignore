@@ -18,8 +18,10 @@ src/index.html
 /fb-functions/functions/project.json
 lib-cache/
 dist/
+build/
 # src/project-secrets.json
 src/project-secrets.bak.json
+api/build
 
 # psm
 .gitpsm/
